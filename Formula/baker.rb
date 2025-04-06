@@ -1,37 +1,35 @@
 class Baker < Formula
   desc "baker: project scaffolding tool"
   homepage "https://github.com/aliev/baker"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/baker/releases/download/v0.6.0/baker-aarch64-apple-darwin.tar.xz"
-      sha256 "55cbb05477336760f6e471ab5ba43bc8bed37e14678f8c87b2ba53ff5cd55448"
+      url "https://github.com/aliev/baker/releases/download/v0.7.0/baker-aarch64-apple-darwin.tar.xz"
+      sha256 "e6125fe7eef490c32904b1563e93de3262c53f4251224fac7aeed288fc0371ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/baker/releases/download/v0.6.0/baker-x86_64-apple-darwin.tar.xz"
-      sha256 "617c00138fddbef3e31453137b25e9e284b1ef93d59a61d478c6c75af51f320f"
+      url "https://github.com/aliev/baker/releases/download/v0.7.0/baker-x86_64-apple-darwin.tar.xz"
+      sha256 "40f88934793c62381f3272bf44e4d73aef7fa9f4d4819c2977c4f80f9b7e678d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/baker/releases/download/v0.6.0/baker-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f413587cf6108361db1b73cfcfc1cf7e6c506835abcdd522ad3ee6f2a003ebc1"
+      url "https://github.com/aliev/baker/releases/download/v0.7.0/baker-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2eea38a484ef9795c7ead111dc27cae52b03d7049d5972942721577d6ba7c859"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/baker/releases/download/v0.6.0/baker-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e6e201fb5a2be09d68934413a7cde94e0717c8bec4a37aec8c183f2570e2cdb2"
+      url "https://github.com/aliev/baker/releases/download/v0.7.0/baker-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0cdb32208cf8f5f121adbf8205da3cb321d5fa0fac0560872391d4aa0cfbb245"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":              {},
-    "aarch64-unknown-linux-gnu":         {},
-    "x86_64-apple-darwin":               {},
-    "x86_64-pc-windows-gnu":             {},
-    "x86_64-unknown-linux-gnu":          {},
-    "x86_64-unknown-linux-musl-dynamic": {},
-    "x86_64-unknown-linux-musl-static":  {},
+    "aarch64-apple-darwin":      {},
+    "aarch64-unknown-linux-gnu": {},
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
   def target_triple
