@@ -1,25 +1,25 @@
 class McpMemory < Formula
   desc "MCP Memory is a lightweight Model Context Protocol (MCP) server that stores a knowledge graph on disk and provides simple text search capabilities."
   homepage "https://github.com/aliev/mcp_memory"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.0/mcp_memory-aarch64-apple-darwin.tar.xz"
-      sha256 "1325953c09bcafbe9e565fff94899a26d30c47bfd26db9e5e7673660ba6c8132"
+      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.1/mcp_memory-aarch64-apple-darwin.tar.xz"
+      sha256 "9aab9264169dcdab5520e7501771ab62558720fef2151dbde88de14e51e87d97"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.0/mcp_memory-x86_64-apple-darwin.tar.xz"
-      sha256 "c873c9fa1306d92cf88da77b6ba186f5da906f534edc674d39062b5a5140a71f"
+      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.1/mcp_memory-x86_64-apple-darwin.tar.xz"
+      sha256 "07ff6a5bd75c60bf220a313f931e2b0246e93c80879dbc57d0b3bd5c76e58390"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.0/mcp_memory-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0b130a00a33a8e5b4ba53b6aa887384eb8ec88921e84bc6f6958dffae90afdeb"
+      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.1/mcp_memory-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a16e9c27dd6f9eeb20b09358dc78dc03d4020c9e0f56120036de042cb71a9c55"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.0/mcp_memory-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e14dab0008487329d1cecebad6bb2b33e112d59e072407289890fb5d647ec524"
+      url "https://github.com/aliev/mcp_memory/releases/download/v0.1.1/mcp_memory-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a56a72ef08a9a624d451f6a918b50259980ac9917f1237174766dd97823ef1a4"
     end
   end
   license "MIT"
