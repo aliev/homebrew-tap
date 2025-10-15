@@ -1,25 +1,25 @@
 class Baker < Formula
   desc "baker: project scaffolding tool"
   homepage "https://github.com/aliev/baker"
-  version "0.12.1"
+  version "0.12.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/baker/releases/download/v0.12.1/baker-aarch64-apple-darwin.tar.xz"
-      sha256 "aece37c2ac52f82de49f39ee80b1b63ae0911435be733d2d80bb7881e69d95c1"
+      url "https://github.com/aliev/baker/releases/download/v0.12.2/baker-aarch64-apple-darwin.tar.xz"
+      sha256 "f647ccd0c7f3da639bcf22e4543646c422800a1242b963c9f58e2a63f18cbd9d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/baker/releases/download/v0.12.1/baker-x86_64-apple-darwin.tar.xz"
-      sha256 "c180fe2f03189c28f83e957e99f543f820b6f95efcf6bf5645e38f001c3e3d03"
+      url "https://github.com/aliev/baker/releases/download/v0.12.2/baker-x86_64-apple-darwin.tar.xz"
+      sha256 "b7360b07c58ac9e977be08cd4e8d4d6ea7b43fb88ba335f015c1126ababd5d75"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/baker/releases/download/v0.12.1/baker-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "f5d729dbc67f9223a3ab5b65dceba2ee95e895d6faa9fc441c9a64956f33a4e1"
+      url "https://github.com/aliev/baker/releases/download/v0.12.2/baker-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "28a3af4d15913eb84a764bf31bd30d07061fd2ae75f0d1c3baa955c723182b0a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/baker/releases/download/v0.12.1/baker-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "e3ca0cf457233ad1c355a9335ec0938924376eac7b1cb1181637a61b3331a19b"
+      url "https://github.com/aliev/baker/releases/download/v0.12.2/baker-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "5312d31007115de7bdc39c2f76f1eae28d2017212003edbdafdc283767fe37ea"
     end
   end
   license "MIT"
