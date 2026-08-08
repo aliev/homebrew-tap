@@ -1,25 +1,25 @@
 class Loopdiff < Formula
   desc "A fast GitHub-like terminal diff review loop for humans and AI"
   homepage "https://github.com/aliev/loopdiff"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/loopdiff/releases/download/v0.1.0/loopdiff-aarch64-apple-darwin.tar.xz"
-      sha256 "8671ca50eb7603676338063552c04f948dcd576588a4f1b654697839b6608b66"
+      url "https://github.com/aliev/loopdiff/releases/download/v0.2.0/loopdiff-aarch64-apple-darwin.tar.xz"
+      sha256 "128ea1e576d48f3e8f570b562f8fec44d2ab2ab3f6ea6a205e78b1e53c5113b2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/loopdiff/releases/download/v0.1.0/loopdiff-x86_64-apple-darwin.tar.xz"
-      sha256 "bc6579d9fc2d8edbbd55864a235159f1a300c557d2fdce2d773535b33510acef"
+      url "https://github.com/aliev/loopdiff/releases/download/v0.2.0/loopdiff-x86_64-apple-darwin.tar.xz"
+      sha256 "a888d664cf4eaf9b6c2abec8ed523492746aa732df139418a4f0442e4e2d51bd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/loopdiff/releases/download/v0.1.0/loopdiff-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3ae6464cb78e62047a47c05dc4c278c2de94872e6d27e469bcb00e5e4444788f"
+      url "https://github.com/aliev/loopdiff/releases/download/v0.2.0/loopdiff-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8b3762993449246e2f2c19f6f061bde8f954be7d4d674749b4a9f715dfb0d19f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/loopdiff/releases/download/v0.1.0/loopdiff-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8613d24a014f6a4ea811dd4de1ab7b3ff2d1008064b7ea44f69c680c04f1d7bd"
+      url "https://github.com/aliev/loopdiff/releases/download/v0.2.0/loopdiff-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fea692f79f4efaa66661161a618274bb31a3eb05eb2c7642f139e10d8fdd9b72"
     end
   end
   license "MIT"
