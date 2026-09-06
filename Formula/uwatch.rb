@@ -1,25 +1,25 @@
 class Uwatch < Formula
   desc "Filesystem change history grouped into quiet-period batches"
   homepage "https://github.com/aliev/udiff"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.1/uwatch-aarch64-apple-darwin.tar.xz"
-      sha256 "f52171f5550ff10677307105d47f947c10efc32276d6c84e0030e4804da4e164"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.2/uwatch-aarch64-apple-darwin.tar.xz"
+      sha256 "07a27eacff02d8721e585a174fdef09c5fb55fdfb3e9abb9af5cd9733e59328c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.1/uwatch-x86_64-apple-darwin.tar.xz"
-      sha256 "e5ca73e7fb6caf9cae27d68dd31b73b75e0f0ea2f77e63dfc02d5d10ed49a9d0"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.2/uwatch-x86_64-apple-darwin.tar.xz"
+      sha256 "3b1c2dfeb7fd23906c16713b69ce5e0b07681f4ee803de47f0da57c7f1067cf7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.1/uwatch-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b9eaf8e3569730151435150dae53b755b97934512f504f39a2d99a1786f31ea7"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.2/uwatch-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4b88802b68ed2af5d9129f5d02f10a088e770b5584f5a46c25370929c1594344"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.1/uwatch-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fe66395b7f40610030a19e1cc9c22e1de1de2ea5ddfa8ab0f34f6fd0bcb9e91b"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.2/uwatch-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "42267fe74eed7d59e551a22188a1b799514d9e323b0399082e26eebd42349203"
     end
   end
   license "MIT"
