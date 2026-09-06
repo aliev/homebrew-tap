@@ -1,25 +1,25 @@
 class Udiff < Formula
   desc "A focused terminal UI for code review"
   homepage "https://github.com/aliev/udiff"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.2/udiff-aarch64-apple-darwin.tar.xz"
-      sha256 "0c684ccfeae438f47f5552d08fdc54e0b238bf940bc8627236693177ce4fcabe"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.3/udiff-aarch64-apple-darwin.tar.xz"
+      sha256 "c465be94c6920f25b858c2a5808b217d64d3f6b2f9dab04192f5ac0380c5d357"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.2/udiff-x86_64-apple-darwin.tar.xz"
-      sha256 "81229626827d9b8d0563ed273ad02cfa918446d61297052108f370318fd611c1"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.3/udiff-x86_64-apple-darwin.tar.xz"
+      sha256 "987bfcc65b42edfa601936ccba5b7e7e96a6a68f28c14c42c7252a5ffb2730f5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.2/udiff-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e8319fc4ca74ac1575b52741ad3f4010917b55c89fe5706d8c825cf947558c91"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.3/udiff-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3a9f14853e8fa0c538dbba6212406a56357a93c0bcb65c737669ebe375c7afdb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/udiff/releases/download/v0.1.2/udiff-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "76ed536fe14005022f25819c8d9cb039b733cf21b47b9a97b1541c8e83abf8ea"
+      url "https://github.com/aliev/udiff/releases/download/v0.1.3/udiff-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "517a89b97d0864f2decf25b0788ab5c09eabccc1480ec0dad4765a32b38b1bf8"
     end
   end
   license "MIT"
