@@ -7,28 +7,28 @@
 class Helix < Formula
   desc "Post-modern modal text editor, with this fork's persistent undo"
   homepage "https://github.com/aliev/helix"
-  version "25.7.1-ali.1"
+  version "25.7.1-ali.2"
   license "MPL-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.1/helix-25.7.1-ali.1-aarch64-macos.tar.xz"
-      sha256 "d30ea1df9e97291469344cbf0f517fbfaccec702ffbad23039aee916940fc6e2"
+      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.2/helix-25.7.1-ali.2-aarch64-macos.tar.xz"
+      sha256 "29944f899d334f2bd012efa8224d95d32f58d71e8b790aae684d9638fe6ed4be"
     end
     on_intel do
-      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.1/helix-25.7.1-ali.1-x86_64-macos.tar.xz"
-      sha256 "1342ba1ba4597e5b94707b943242eaa8bb9333bff83b8e9338fb57608297aa99"
+      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.2/helix-25.7.1-ali.2-x86_64-macos.tar.xz"
+      sha256 "c2ec1b08c63ff39a22af210db1f4e1fee6ddc14cbb5a1549222442f89768a539"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.1/helix-25.7.1-ali.1-aarch64-linux.tar.xz"
-      sha256 "6d269362f96726077625b79ecc4f18e1cf2db835e4e68f11591c84546b8fbba9"
+      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.2/helix-25.7.1-ali.2-aarch64-linux.tar.xz"
+      sha256 "d1c53e54a17916c23fc1a5928fe2f1dedb0337edabb093ebec04aa3f553da1a7"
     end
     on_intel do
-      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.1/helix-25.7.1-ali.1-x86_64-linux.tar.xz"
-      sha256 "3192c3071f67dee05598e22183697f583e8dd6ade047f885057a6b001211e70c"
+      url "https://github.com/aliev/helix/releases/download/25.7.1-ali.2/helix-25.7.1-ali.2-x86_64-linux.tar.xz"
+      sha256 "4f2368896c8b19b2e5685a8c696dfff0df5c23c0011d8dad5df47986d14309f0"
     end
   end
 
