@@ -1,25 +1,25 @@
 class Baker < Formula
   desc "baker: project scaffolding tool"
   homepage "https://github.com/aliev/baker"
-  version "0.16.1"
+  version "0.17.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/baker/releases/download/v0.16.1/baker-aarch64-apple-darwin.tar.xz"
-      sha256 "8141039661c733a4bb7f2f6dde62c45f4b9db4d4697e4c7cf9788062fc7a3ec6"
+      url "https://github.com/aliev/baker/releases/download/v0.17.0/baker-aarch64-apple-darwin.tar.xz"
+      sha256 "b260d2de2224365a9c4b26a0edf7de9839b8a7cb05b6847f0b04056335c8fbe7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/baker/releases/download/v0.16.1/baker-x86_64-apple-darwin.tar.xz"
-      sha256 "36063d1dc5807c577858bccc28cbab894ad8061afcc17311b9431da0096bf54a"
+      url "https://github.com/aliev/baker/releases/download/v0.17.0/baker-x86_64-apple-darwin.tar.xz"
+      sha256 "489dfc824548d233319a4a1dba23955e78995c2d3638694b9dc12593991a4b5b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aliev/baker/releases/download/v0.16.1/baker-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c518171a42040c6ed1a05372816cd35233007ded690cc81559ac61ae87c82223"
+      url "https://github.com/aliev/baker/releases/download/v0.17.0/baker-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "47fba82e0e47707e715171ceede5ca89c35e7642a59e6d8fe79a98d28bd4c67f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aliev/baker/releases/download/v0.16.1/baker-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "414b508dce1b440c3e35b903ca9eaae4204988a6708809b1305c5c8d43a466ac"
+      url "https://github.com/aliev/baker/releases/download/v0.17.0/baker-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d70cc7896d2a4a5a29d9ed12cdb94e3fcc3fbb4c284e6623bccc42d6a03525c7"
     end
   end
   license "MIT"
@@ -52,10 +52,18 @@ class Baker < Formula
   end
 
   def install
-    bin.install "baker" if OS.mac? && Hardware::CPU.arm?
-    bin.install "baker" if OS.mac? && Hardware::CPU.intel?
-    bin.install "baker" if OS.linux? && Hardware::CPU.arm?
-    bin.install "baker" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "baker"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "baker"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "baker"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "baker"
+    end
 
     install_binary_aliases!
 
